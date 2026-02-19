@@ -1,0 +1,2 @@
+CP949 extended Hangul filename test.
+뷁 is in CP949 but not in EUC-KR.

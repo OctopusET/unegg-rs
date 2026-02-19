@@ -1,0 +1,30 @@
+[package]
+name = "unegg-rs"
+version = "0.1.0"
+edition = "2024"
+description = "EGG archive extractor"
+license = "BSD-2-Clause"
+repository = "https://github.com/OctopusET/unegg-rs"
+exclude = ["testdata/"]
+
+[lib]
+name = "unegg_rs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "unegg"
+path = "src/main.rs"
+
+[dependencies]
+libazo = "0.1"
+clap = { version = "4", features = ["derive"] }
+flate2 = "1"
+bzip2 = "0.5"
+lzma-rs = "0.3"
+aes = "0.8"
+pbkdf2 = "0.12"
+hmac = "0.12"
+sha1 = "0.10"
+crc32fast = "1"
+filetime = "0.2"
+encoding_rs = "0.8"
